@@ -1,0 +1,10 @@
+Aqua Client source patch
+
+- Replaced the old/invalid RenderType import with Minecraft 1.21.11 RenderTypes.LINES.
+- Replaced the removed ShapeRenderer.renderLineBox call with LevelRenderer.renderLineBox.
+- Uses Camera.position() for the camera-relative block boxes.
+- Implemented separate StorageFinder and SpawnerFinder scans and outline drawing.
+- Scans already-loaded chunks only, every 10 client ticks, within configured ranges.
+- Updated GitHub Actions to use Java 21, matching the project's toolchain.
+
+Not yet implemented: filled boxes, tracers, through-wall rendering, pulse animation, and configurable line thickness. This source has not been built or tested in Minecraft in this environment.
